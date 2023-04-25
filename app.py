@@ -7,6 +7,7 @@ from langchain.chains import LLMChain, SequentialChain
 from langchain.memory import ConversationBufferMemory
 from langchain.utilities import WikipediaAPIWrapper
 
+port = int(os.environ.get("PORT", 5000))
 
 apikey = os.environ.get('API_KEY')
 
